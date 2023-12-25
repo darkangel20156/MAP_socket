@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity(), ServerCallback, ClientCallback {
 
             // Check if username and password are not empty
             if (username.isNotEmpty() && password.isNotEmpty()) {
-                val connectionMsg = "Connected at ${getCurrentDateTime()}" + "\n" + "Username: $username, Password: $password"
+                val connectionMsg = "Connected on ${getCurrentDateTime()}" + "\n" + "Username: $username" + "\n" + "Password: $password"
                 SocketClient.sendToServer(connectionMsg)
 
                 // Dismiss the dialog
